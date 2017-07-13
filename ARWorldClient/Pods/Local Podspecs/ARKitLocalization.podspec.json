@@ -1,0 +1,60 @@
+{
+  "name": "ARKitLocalization",
+  "version": "0.0.1",
+  "license": "New BSD",
+  "authors": {
+    "Guanqi Yu (Steven)": "steven@wondergate.io"
+  },
+  "homepage": "http://www.wondergate.io/",
+  "summary": "ARKit Localization",
+  "source": {
+    "git": "https://github.com/grpc/grpc.git"
+  },
+  "platforms": {
+    "ios": "11.0",
+    "osx": "10.9"
+  },
+  "dependencies": {
+    "!ProtoCompiler-gRPCPlugin": [
+      "~> 1.0"
+    ]
+  },
+  "prepare_command": "mkdir -p Pods/ARKitLocalization\nPods/!ProtoCompiler/protoc         --plugin=protoc-gen-grpc=Pods/!ProtoCompiler-gRPCPlugin/grpc_objective_c_plugin         --objc_out=Pods/ARKitLocalization         --grpc_out=Pods/ARKitLocalization         -I ../protos         -I Pods/!ProtoCompiler         ../protos/arkit_localization.proto",
+  "pod_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
+  "subspecs": [
+    {
+      "name": "Messages",
+      "source_files": [
+        "Pods/ARKitLocalization/*.pbobjc.{h,m}",
+        "Pods/ARKitLocalization/**/*.pbobjc.{h,m}"
+      ],
+      "header_mappings_dir": "Pods/ARKitLocalization",
+      "requires_arc": false,
+      "dependencies": {
+        "Protobuf": [
+
+        ]
+      }
+    },
+    {
+      "name": "Services",
+      "source_files": [
+        "Pods/ARKitLocalization/*.pbrpc.{h,m}",
+        "Pods/ARKitLocalization/**/*.pbrpc.{h,m}"
+      ],
+      "header_mappings_dir": "Pods/ARKitLocalization",
+      "requires_arc": true,
+      "dependencies": {
+        "gRPC-ProtoRPC": [
+
+        ],
+        "ARKitLocalization/Messages": [
+
+        ]
+      }
+    }
+  ]
+}

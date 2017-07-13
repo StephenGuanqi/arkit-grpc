@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.wondergate.code.arkitlocalization";
+option java_outer_classname = "ARKitLocalizationProto";
+option objc_class_prefix = "ARL";
+
+package arkitlocalization;
+
+
+service ARKitLocalization {
+  
+
+  rpc GetARWorld2WorldTransform(ARInfo) returns (ARWorld2World) {}
+
+  rpc TestImageInterface(ARKitImage) returns (ServerResponse) {}
+
+  rpc TestTransformInterface(ARKitCameraPos) returns (ServerResponse) {}
+
+}
+
+message ARInfo {
+	
+	ARKitImage ar_image = 1;
+	ARKitCameraPos ar_world_transform = 2;
+
+}
+
+// captured image provided by ARFrame
+message ARKitImage {
+  
+  // CVPixelBuffer presented in byte[] format
+  bytes pixe_buffer = 1;
+
+  // time stamp of when the image is captured
+  double timestamp = 2;
+  
+}
+
+message  ARKitCameraPos {
+  
+  // 4*4 matrix
+  repeated float m = 1;
+  
+}
+
+message ARWorld2World {
+  
+  // 4*4 matrix
+  repeated float m = 1;
+
+}
+
+message ServerResponse {
+	int32 succeed = 1;
+}
+

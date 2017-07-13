@@ -1,0 +1,61 @@
+PODS:
+  - '!ProtoCompiler (3.2.0)':
+    - Protobuf (~> 3.0)
+  - '!ProtoCompiler-gRPCPlugin (1.4.1)':
+    - '!ProtoCompiler (= 3.2.0)'
+    - gRPC-ProtoRPC (= 1.4.1)
+  - ARKitLocalization (0.0.1):
+    - '!ProtoCompiler-gRPCPlugin (~> 1.0)'
+    - ARKitLocalization/Messages (= 0.0.1)
+    - ARKitLocalization/Services (= 0.0.1)
+  - ARKitLocalization/Messages (0.0.1):
+    - '!ProtoCompiler-gRPCPlugin (~> 1.0)'
+    - Protobuf
+  - ARKitLocalization/Services (0.0.1):
+    - '!ProtoCompiler-gRPCPlugin (~> 1.0)'
+    - ARKitLocalization/Messages
+    - gRPC-ProtoRPC
+  - BoringSSL (8.2):
+    - BoringSSL/Implementation (= 8.2)
+    - BoringSSL/Interface (= 8.2)
+  - BoringSSL/Implementation (8.2):
+    - BoringSSL/Interface (= 8.2)
+  - BoringSSL/Interface (8.2)
+  - gRPC (1.4.1):
+    - gRPC-Core (= 1.4.1)
+    - gRPC-RxLibrary (= 1.4.1)
+  - gRPC-Core (1.4.1):
+    - gRPC-Core/Implementation (= 1.4.1)
+    - gRPC-Core/Interface (= 1.4.1)
+  - gRPC-Core/Implementation (1.4.1):
+    - BoringSSL (~> 8.0)
+    - gRPC-Core/Interface (= 1.4.1)
+  - gRPC-Core/Interface (1.4.1)
+  - gRPC-ProtoRPC (1.4.1):
+    - gRPC (= 1.4.1)
+    - gRPC-RxLibrary (= 1.4.1)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.4.1)
+  - Protobuf (3.3.0)
+
+DEPENDENCIES:
+  - ARKitLocalization (from `.`)
+
+EXTERNAL SOURCES:
+  ARKitLocalization:
+    :path: .
+
+SPEC CHECKSUMS:
+  '!ProtoCompiler': b66c7c0c1d911ad1490dcbfce30e1508739d8309
+  '!ProtoCompiler-gRPCPlugin': 52d2b6877a6c4db04a01cce165be8b2e2c2c6b99
+  ARKitLocalization: b67f9f8e2cf23eba99707886833db4405b19e623
+  BoringSSL: 4135ae556ee2b82ee85477c39ba917a3dd5424ba
+  gRPC: 2de74ab13b182202291880116a80ca696a61fbc5
+  gRPC-Core: cf07db6ab072aa482aefaa16f78993c7b7ad50cf
+  gRPC-ProtoRPC: 088532dcbe287480e195b5abdff549dee2f7c478
+  gRPC-RxLibrary: 1f5187aec4171cb1d6673ecc7c76101becce8f1b
+  Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+
+PODFILE CHECKSUM: 3b19a78b7969d9ce603e6a055e7708a16b91a5f4
+
+COCOAPODS: 1.2.1

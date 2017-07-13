@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		767C90F94C542E993BB51799 /* libPods-ARWorldClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F35614DF02A0A7DB20F0FA /* libPods-ARWorldClient.a */; };
+		B5AAA79D1F13855C00E0CF04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AAA79C1F13855C00E0CF04 /* AppDelegate.m */; };
+		B5AAA79F1F13855C00E0CF04 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AAA79E1F13855C00E0CF04 /* art.scnassets */; };
+		B5AAA7A21F13855C00E0CF04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AAA7A11F13855C00E0CF04 /* ViewController.m */; };
+		B5AAA7A51F13855C00E0CF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AAA7A31F13855C00E0CF04 /* Main.storyboard */; };
+		B5AAA7A71F13855C00E0CF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AAA7A61F13855C00E0CF04 /* Assets.xcassets */; };
+		B5AAA7AA1F13855C00E0CF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AAA7A81F13855C00E0CF04 /* LaunchScreen.storyboard */; };
+		B5AAA7AD1F13855C00E0CF04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AAA7AC1F13855C00E0CF04 /* main.m */; };
+		B5AAA7B71F13855D00E0CF04 /* ARWorldClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AAA7B61F13855D00E0CF04 /* ARWorldClientTests.m */; };
+		B5AAA7C21F13855D00E0CF04 /* ARWorldClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AAA7C11F13855D00E0CF04 /* ARWorldClientUITests.m */; };
+		B5AAA7D21F13868700E0CF04 /* ARFrameHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AAA7D01F13864A00E0CF04 /* ARFrameHandler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5AAA7B31F13855D00E0CF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5AAA7901F13855C00E0CF04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5AAA7971F13855C00E0CF04;
+			remoteInfo = ARWorldClient;
+		};
+		B5AAA7BE1F13855D00E0CF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5AAA7901F13855C00E0CF04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5AAA7971F13855C00E0CF04;
+			remoteInfo = ARWorldClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D59D3AC3EA0F6A9342109D5 /* Pods-ARWorldClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWorldClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARWorldClient/Pods-ARWorldClient.debug.xcconfig"; sourceTree = "<group>"; };
+		0EF6F3947FFC24C20CE3C291 /* Pods-ARWorldClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARWorldClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARWorldClient/Pods-ARWorldClient.release.xcconfig"; sourceTree = "<group>"; };
+		35F35614DF02A0A7DB20F0FA /* libPods-ARWorldClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARWorldClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AAA7981F13855C00E0CF04 /* ARWorldClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARWorldClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AAA79B1F13855C00E0CF04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5AAA79C1F13855C00E0CF04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5AAA79E1F13855C00E0CF04 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B5AAA7A01F13855C00E0CF04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5AAA7A11F13855C00E0CF04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5AAA7A41F13855C00E0CF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5AAA7A61F13855C00E0CF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5AAA7A91F13855C00E0CF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5AAA7AB1F13855C00E0CF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AAA7AC1F13855C00E0CF04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5AAA7B21F13855D00E0CF04 /* ARWorldClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARWorldClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AAA7B61F13855D00E0CF04 /* ARWorldClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARWorldClientTests.m; sourceTree = "<group>"; };
+		B5AAA7B81F13855D00E0CF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AAA7BD1F13855D00E0CF04 /* ARWorldClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARWorldClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AAA7C11F13855D00E0CF04 /* ARWorldClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARWorldClientUITests.m; sourceTree = "<group>"; };
+		B5AAA7C31F13855D00E0CF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AAA7CF1F13864A00E0CF04 /* ARFrameHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARFrameHandler.h; sourceTree = "<group>"; };
+		B5AAA7D01F13864A00E0CF04 /* ARFrameHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARFrameHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5AAA7951F13855C00E0CF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767C90F94C542E993BB51799 /* libPods-ARWorldClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AAA7AF1F13855D00E0CF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AAA7BA1F13855D00E0CF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07951B3A57E150096DD4A48D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D59D3AC3EA0F6A9342109D5 /* Pods-ARWorldClient.debug.xcconfig */,
+				0EF6F3947FFC24C20CE3C291 /* Pods-ARWorldClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		098FBEC0982B29A2D7547097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35F35614DF02A0A7DB20F0FA /* libPods-ARWorldClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AAA78F1F13855C00E0CF04 = {
+			isa = PBXGroup;
+			children = (
+				B5AAA79A1F13855C00E0CF04 /* ARWorldClient */,
+				B5AAA7B51F13855D00E0CF04 /* ARWorldClientTests */,
+				B5AAA7C01F13855D00E0CF04 /* ARWorldClientUITests */,
+				B5AAA7991F13855C00E0CF04 /* Products */,
+				07951B3A57E150096DD4A48D /* Pods */,
+				098FBEC0982B29A2D7547097 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5AAA7991F13855C00E0CF04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAA7981F13855C00E0CF04 /* ARWorldClient.app */,
+				B5AAA7B21F13855D00E0CF04 /* ARWorldClientTests.xctest */,
+				B5AAA7BD1F13855D00E0CF04 /* ARWorldClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5AAA79A1F13855C00E0CF04 /* ARWorldClient */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAA7CF1F13864A00E0CF04 /* ARFrameHandler.h */,
+				B5AAA7D01F13864A00E0CF04 /* ARFrameHandler.m */,
+				B5AAA79B1F13855C00E0CF04 /* AppDelegate.h */,
+				B5AAA79C1F13855C00E0CF04 /* AppDelegate.m */,
+				B5AAA79E1F13855C00E0CF04 /* art.scnassets */,
+				B5AAA7A01F13855C00E0CF04 /* ViewController.h */,
+				B5AAA7A11F13855C00E0CF04 /* ViewController.m */,
+				B5AAA7A31F13855C00E0CF04 /* Main.storyboard */,
+				B5AAA7A61F13855C00E0CF04 /* Assets.xcassets */,
+				B5AAA7A81F13855C00E0CF04 /* LaunchScreen.storyboard */,
+				B5AAA7AB1F13855C00E0CF04 /* Info.plist */,
+				B5AAA7AC1F13855C00E0CF04 /* main.m */,
+			);
+			path = ARWorldClient;
+			sourceTree = "<group>";
+		};
+		B5AAA7B51F13855D00E0CF04 /* ARWorldClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAA7B61F13855D00E0CF04 /* ARWorldClientTests.m */,
+				B5AAA7B81F13855D00E0CF04 /* Info.plist */,
+			);
+			path = ARWorldClientTests;
+			sourceTree = "<group>";
+		};
+		B5AAA7C01F13855D00E0CF04 /* ARWorldClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAA7C11F13855D00E0CF04 /* ARWorldClientUITests.m */,
+				B5AAA7C31F13855D00E0CF04 /* Info.plist */,
+			);
+			path = ARWorldClientUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5AAA7971F13855C00E0CF04 /* ARWorldClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AAA7C61F13855D00E0CF04 /* Build configuration list for PBXNativeTarget "ARWorldClient" */;
+			buildPhases = (
+				7193B4C40CCC2D56DEC108AC /* [CP] Check Pods Manifest.lock */,
+				B5AAA7941F13855C00E0CF04 /* Sources */,
+				B5AAA7951F13855C00E0CF04 /* Frameworks */,
+				B5AAA7961F13855C00E0CF04 /* Resources */,
+				7753FC4CDC4B329EEF79E677 /* [CP] Embed Pods Frameworks */,
+				00DA087A68D9AC705AD4FF6E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARWorldClient;
+			productName = ARWorldClient;
+			productReference = B5AAA7981F13855C00E0CF04 /* ARWorldClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5AAA7B11F13855D00E0CF04 /* ARWorldClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AAA7C91F13855D00E0CF04 /* Build configuration list for PBXNativeTarget "ARWorldClientTests" */;
+			buildPhases = (
+				B5AAA7AE1F13855D00E0CF04 /* Sources */,
+				B5AAA7AF1F13855D00E0CF04 /* Frameworks */,
+				B5AAA7B01F13855D00E0CF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5AAA7B41F13855D00E0CF04 /* PBXTargetDependency */,
+			);
+			name = ARWorldClientTests;
+			productName = ARWorldClientTests;
+			productReference = B5AAA7B21F13855D00E0CF04 /* ARWorldClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5AAA7BC1F13855D00E0CF04 /* ARWorldClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AAA7CC1F13855D00E0CF04 /* Build configuration list for PBXNativeTarget "ARWorldClientUITests" */;
+			buildPhases = (
+				B5AAA7B91F13855D00E0CF04 /* Sources */,
+				B5AAA7BA1F13855D00E0CF04 /* Frameworks */,
+				B5AAA7BB1F13855D00E0CF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5AAA7BF1F13855D00E0CF04 /* PBXTargetDependency */,
+			);
+			name = ARWorldClientUITests;
+			productName = ARWorldClientUITests;
+			productReference = B5AAA7BD1F13855D00E0CF04 /* ARWorldClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5AAA7901F13855C00E0CF04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = wondergate;
+				TargetAttributes = {
+					B5AAA7971F13855C00E0CF04 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					B5AAA7B11F13855D00E0CF04 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = B5AAA7971F13855C00E0CF04;
+					};
+					B5AAA7BC1F13855D00E0CF04 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = B5AAA7971F13855C00E0CF04;
+					};
+				};
+			};
+			buildConfigurationList = B5AAA7931F13855C00E0CF04 /* Build configuration list for PBXProject "ARWorldClient" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5AAA78F1F13855C00E0CF04;
+			productRefGroup = B5AAA7991F13855C00E0CF04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5AAA7971F13855C00E0CF04 /* ARWorldClient */,
+				B5AAA7B11F13855D00E0CF04 /* ARWorldClientTests */,
+				B5AAA7BC1F13855D00E0CF04 /* ARWorldClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5AAA7961F13855C00E0CF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AAA79F1F13855C00E0CF04 /* art.scnassets in Resources */,
+				B5AAA7AA1F13855C00E0CF04 /* LaunchScreen.storyboard in Resources */,
+				B5AAA7A71F13855C00E0CF04 /* Assets.xcassets in Resources */,
+				B5AAA7A51F13855C00E0CF04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AAA7B01F13855D00E0CF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AAA7BB1F13855D00E0CF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DA087A68D9AC705AD4FF6E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWorldClient/Pods-ARWorldClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7193B4C40CCC2D56DEC108AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7753FC4CDC4B329EEF79E677 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARWorldClient/Pods-ARWorldClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5AAA7941F13855C00E0CF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AAA7D21F13868700E0CF04 /* ARFrameHandler.m in Sources */,
+				B5AAA7A21F13855C00E0CF04 /* ViewController.m in Sources */,
+				B5AAA7AD1F13855C00E0CF04 /* main.m in Sources */,
+				B5AAA79D1F13855C00E0CF04 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AAA7AE1F13855D00E0CF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AAA7B71F13855D00E0CF04 /* ARWorldClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AAA7B91F13855D00E0CF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AAA7C21F13855D00E0CF04 /* ARWorldClientUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5AAA7B41F13855D00E0CF04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5AAA7971F13855C00E0CF04 /* ARWorldClient */;
+			targetProxy = B5AAA7B31F13855D00E0CF04 /* PBXContainerItemProxy */;
+		};
+		B5AAA7BF1F13855D00E0CF04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5AAA7971F13855C00E0CF04 /* ARWorldClient */;
+			targetProxy = B5AAA7BE1F13855D00E0CF04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5AAA7A31F13855C00E0CF04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AAA7A41F13855C00E0CF04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5AAA7A81F13855C00E0CF04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5AAA7A91F13855C00E0CF04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5AAA7C41F13855D00E0CF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5AAA7C51F13855D00E0CF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5AAA7C71F13855D00E0CF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D59D3AC3EA0F6A9342109D5 /* Pods-ARWorldClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J6G8CBSPAT;
+				INFOPLIST_FILE = ARWorldClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.wondergate.code.ARWorldClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5AAA7C81F13855D00E0CF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF6F3947FFC24C20CE3C291 /* Pods-ARWorldClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J6G8CBSPAT;
+				INFOPLIST_FILE = ARWorldClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.wondergate.code.ARWorldClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5AAA7CA1F13855D00E0CF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J6G8CBSPAT;
+				INFOPLIST_FILE = ARWorldClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.wondergate.code.ARWorldClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARWorldClient.app/ARWorldClient";
+			};
+			name = Debug;
+		};
+		B5AAA7CB1F13855D00E0CF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J6G8CBSPAT;
+				INFOPLIST_FILE = ARWorldClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.wondergate.code.ARWorldClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARWorldClient.app/ARWorldClient";
+			};
+			name = Release;
+		};
+		B5AAA7CD1F13855D00E0CF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = J6G8CBSPAT;
+				INFOPLIST_FILE = ARWorldClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.wondergate.code.ARWorldClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARWorldClient;
+			};
+			name = Debug;
+		};
+		B5AAA7CE1F13855D00E0CF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = J6G8CBSPAT;
+				INFOPLIST_FILE = ARWorldClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.wondergate.code.ARWorldClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARWorldClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5AAA7931F13855C00E0CF04 /* Build configuration list for PBXProject "ARWorldClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AAA7C41F13855D00E0CF04 /* Debug */,
+				B5AAA7C51F13855D00E0CF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AAA7C61F13855D00E0CF04 /* Build configuration list for PBXNativeTarget "ARWorldClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AAA7C71F13855D00E0CF04 /* Debug */,
+				B5AAA7C81F13855D00E0CF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AAA7C91F13855D00E0CF04 /* Build configuration list for PBXNativeTarget "ARWorldClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AAA7CA1F13855D00E0CF04 /* Debug */,
+				B5AAA7CB1F13855D00E0CF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AAA7CC1F13855D00E0CF04 /* Build configuration list for PBXNativeTarget "ARWorldClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AAA7CD1F13855D00E0CF04 /* Debug */,
+				B5AAA7CE1F13855D00E0CF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5AAA7901F13855C00E0CF04 /* Project object */;
+}

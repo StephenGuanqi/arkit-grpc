@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x73-g3-hzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ub8-UI-vAP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uKn-gc-OVs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zB-LW-neX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kO-hP-7NZ">
+                                <rect key="frame" x="138" y="618" width="99" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send Info"/>
+                                <connections>
+                                    <action selector="uiButtonTouched:" destination="BV1-FR-VrT" eventType="touchUpInside" id="w2Y-i4-rzZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5zB-LW-neX" secondAttribute="trailing" id="0Cr-Xt-gbL"/>
+                            <constraint firstItem="Ub8-UI-vAP" firstAttribute="top" secondItem="5zB-LW-neX" secondAttribute="bottom" id="3RO-6M-DZv"/>
+                            <constraint firstItem="5zB-LW-neX" firstAttribute="top" secondItem="uKn-gc-OVs" secondAttribute="top" id="E82-2o-fJw"/>
+                            <constraint firstItem="5zB-LW-neX" firstAttribute="leading" secondItem="uKn-gc-OVs" secondAttribute="leading" id="Evh-vv-Weo"/>
+                            <constraint firstItem="9kO-hP-7NZ" firstAttribute="top" secondItem="5zB-LW-neX" secondAttribute="bottom" constant="-55" id="JUf-T6-6li"/>
+                            <constraint firstItem="9kO-hP-7NZ" firstAttribute="centerX" secondItem="5zB-LW-neX" secondAttribute="centerX" id="QY2-fW-Peh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="9kO-hP-7NZ" id="8Ho-jp-4FB"/>
+                        <outlet property="sceneView" destination="5zB-LW-neX" id="LKr-Rh-vJu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

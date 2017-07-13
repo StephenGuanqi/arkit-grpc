@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, ’11.0’
+
+install! 'cocoapods', :deterministic_uuids => false
+
+target 'ARWorldClient' do
+  # Depend on the generated ARKitLocalization library.
+  pod 'ARKitLocalization’, :path => '.'
+end
